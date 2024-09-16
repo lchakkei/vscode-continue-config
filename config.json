@@ -4,8 +4,8 @@
       "title": "OpenAI-compatible server / API",
       "provider": "openai",
       "model": "GPT-4o",
-      "apiKey": "<<API_KEY>>",
-      "apiBase": "https://poe-openai-hx93tcrf7-lchakkeis-projects.vercel.app/v1"
+      "apiKey": "API_KEY",
+      "apiBase": "YOUR_ENDPOINT"
     }
   ],
   "customCommands": [
@@ -16,14 +16,14 @@
     }
   ],
   "tabAutocompleteModel": {
-    // "title": "Starcoder2 3b",
-    // "provider": "ollama",
-    // "model": "starcoder2:3b"
-    // "title": "Tab Autocomplete Model",
-    // "model": "GPT-4o-Mini",
-    // "provider": "openai",
-    // "apiKey": "<<API_KEY>>",
-    // "apiBase": "https://71db-34-145-137-144.ngrok-free.app/v1"
+    "title": "Tab Autocomplete Model",
+    "model": "GPT-4o-Mini",
+    "provider": "openai",
+    "apiKey": "API_KEY",
+    "apiBase": "YOUR_ENDPOINT"
+  },
+  "tabAutocompleteOptions": {
+    "disable": true
   },
   "contextProviders": [
     {
