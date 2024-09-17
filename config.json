@@ -1,11 +1,24 @@
 {
   "models": [
     {
-      "title": "OpenAI-compatible server / API",
+      "title": "GPT 4o",
       "provider": "openai",
-      "model": "GPT-4o",
-      "apiKey": "API_KEY",
-      "apiBase": "YOUR_ENDPOINT"
+      "model": "gpt-4o",
+      "apiKey": "apiKey",
+      "apiBase": "apiBase",
+      "completionOptions": {
+        "stream": true
+      }
+    },
+    {
+      "title": "Claude 3 Sonnet",
+      "provider": "openai",
+      "model": "claude-3-sonnet",
+      "apiKey": "apiKey",
+      "apiBase": "apiBase",
+      "completionOptions": {
+        "stream": true
+      }
     }
   ],
   "customCommands": [
@@ -17,13 +30,16 @@
   ],
   "tabAutocompleteModel": {
     "title": "Tab Autocomplete Model",
-    "model": "GPT-4o-Mini",
-    "provider": "openai",
-    "apiKey": "API_KEY",
-    "apiBase": "YOUR_ENDPOINT"
+    "provider": "huggingface-inference-api",
+    "model": "starcoder2-3b",
+    "apiKey": "apiKey",
+    "apiBase": "apiBase",
+    "requestOptions": {
+      "timeout": 10000
+    }
   },
   "tabAutocompleteOptions": {
-    "disable": true
+    "disable": false
   },
   "contextProviders": [
     {
